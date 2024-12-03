@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+
+    <script>
+
+        let nome = prompt (`Digite seu nome`);
+        let idade = prompt (`Digite sua idade`);
+        let prova = prompt (`Digite sua pontuação na prova técnica`);
+        let entrevista = prompt (`Digite sua pontuação na entrevista`);
+
+        if (idade < 18)
+            { alert (` Desculpe ${nome} não atende os requisitos de idade`)}
+
+        else if  (idade >= 18 && prova <7 && entrevista > 6 )
+            { alert (`Infelizmente ${nome} sua pontuação na prova tecnica foi insuficiente`)}
+        
+        else if  (idade >= 18 && prova >7 && entrevista < 6 )
+            { alert (`Infelizmente ${nome} sua pontuação na entrevista foi insuficiente`)}
+            
+        else if  (idade >= 18 && prova >=8 && entrevista >= 8 )
+            { alert (`Parabens ${nome} você é altamente qualificado para vaga`)}
+        
+        else{ alert (`Parabens ${nome} você foi aprovado para esta vaga`)};
+
+    </script>
+    
+</body>
+</html>
